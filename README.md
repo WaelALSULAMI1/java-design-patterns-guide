@@ -2,7 +2,7 @@
 
 An interactive, beginner-friendly guide to eight classic object-oriented design patterns, explained through the problems they solve and illustrated with short, readable Java examples.
 
-**Website:** published from this repository with GitHub Pages. The address is listed in the repository’s *About* panel.
+**Website:** published from this repository with GitHub Pages. The address is listed in the repository’s *[About](https://waelalsulami1.github.io/java-design-patterns-guide/#/)* panel.
 
 ## Features
 
