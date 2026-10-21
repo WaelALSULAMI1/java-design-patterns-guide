@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Java Design Patterns Guide</title>
+  <script>
+    // The site uses hash routes (#/en/...). Any other path inside the project
+    // is sent back to the home page of this project.
+    (function () {
+      var parts = location.pathname.split('/').filter(Boolean);
+      var base = location.hostname.endsWith('github.io') && parts.length ? '/' + parts[0] + '/' : '/';
+      location.replace(base + location.hash);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to the <a href="./">home page</a>…</p>
+</body>
+</html>

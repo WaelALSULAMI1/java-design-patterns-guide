@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Java Design Patterns Guide</title>
+  <meta name="description" content="A beginner-friendly guide to eight classic design patterns in Java: the problems they solve, readable examples, common mistakes, and interactive practice.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1522" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Java Design Patterns Guide">
+  <meta property="og:description" content="Learn eight classic design patterns through the problems they solve.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>
+    // Apply the saved or system theme before the first paint.
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem('jdpg-theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app" id="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#/" aria-label="Java Design Patterns Guide, home">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="3" y="3" width="26" height="26" rx="7" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M10 21V11h6a4 4 0 0 1 0 8h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="18" y="19" width="5" height="5" rx="1.5" fill="#f4c84f"/>
+        </svg>
+        <span class="brand-text">Java Design Patterns <span>Guide</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main"></nav>
+      <div class="tools">
+        <button class="tool-btn" id="theme-btn" type="button"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <noscript>
+      <div class="wrap" style="padding:48px 24px">
+        <p>This guide needs JavaScript for navigation and exercises. The Java examples can be read directly in the <code>java/</code> folder of the repository.</p>
+      </div>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row" id="footer"></div>
+  </footer>
+
+  <div class="visually-hidden" aria-live="polite" id="announcer"></div>
+</body>
+</html>
